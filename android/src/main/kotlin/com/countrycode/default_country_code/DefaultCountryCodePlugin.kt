@@ -46,7 +46,7 @@ class DefaultCountryCodePlugin : FlutterPlugin, MethodCallHandler {
             if (country == null || country.isEmpty()){
                 result.error("SIM_COUNTRY_CODE_ERROR", null, null);
             }else {
-                result.success(country.toUpperCase(Locale.ROOT));
+                result.success(country.uppercase(Locale.ROOT));
             }
         } catch (e: Exception) {
             e.printStackTrace()
@@ -61,7 +61,7 @@ class DefaultCountryCodePlugin : FlutterPlugin, MethodCallHandler {
             if (country == null || country.isEmpty()){
                 result.error("NETWORK_COUNTRY_CODE_ERROR", null, null);
             }else {
-                result.success(country.toUpperCase(Locale.ROOT));
+                result.success(country.uppercase(Locale.ROOT));
             }
         } catch (e: Exception) {
             e.printStackTrace()
@@ -75,7 +75,7 @@ class DefaultCountryCodePlugin : FlutterPlugin, MethodCallHandler {
             if (country == null || country.isEmpty()){
                 result.error("LOCALE_COUNTRY_CODE_ERROR", null, null);
             }else {
-                result.success(country.toUpperCase(Locale.ROOT));
+                result.success(country.uppercase(Locale.ROOT));
             }
         } catch (e: Exception) {
             e.printStackTrace()
